@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RB Afshin.css">
+    <link rel="stylesheet" href="Style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <p class="hTitle">Todo<span>List</span></p>
+        <header class="thead flex">
+            <div class="date flex">
+                <p class="day"></p>
+                <span class="prev"><i class="fa-solid fa-angle-left"></i></span>
+                <span class="next"><i class="fa-solid fa-angle-right"></i></span>
+            </div>
+            <section class="add">
+                <i class="fa-solid fa-circle-plus"></i>
+            </section>
+            <section class="title flex">
+                <span class="pHolder"><i class="fa-solid fa-list-check"></i></span><input class="addTask" type="text" placeholder="Add Task">
+                <div class="mode flex">
+                    <span class="item1 circle flex">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </span>
+                    <span class="item2 circle flex">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </span>
+                    <span class="item3 circle flex">
+                        <i class="fa-solid fa-headphones"></i>
+                    </span>
+                    <span class="item4 circle flex">
+                        <i class="fa-solid fa-plane"></i>
+                    </span>
+                    <span class="item5 circle flex">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </span>
+                    <span class="item6 circle flex">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <span class="item7 circle flex">
+                        <i class="fa-solid fa-house-user"></i>
+                    </span>
+                </div>
+            </section>
+        </header>
+        <main class="flex">
+            <section class="task">
+                <ul class="flex1">
+
+                </ul>
+            </section>
+        </main>
+        <footer class="flex">
+            <div class="content flex">
+                Powered By AFSHIN<br>
+                <span>
+                    <i class="fa-solid fa-copyright"></i> CopyRight 2022
+                </span>
+            </div>
+            <div class="theme flex">
+                <input type="checkbox" name="" id="theme"><span class="bDark">Light</span><span class="bLight">&nbsp;Dark</span>
+            </div>
+        </footer>
+    </div>
+    <script src="all.min.js"></script>
+    <script src="Main.js"></script>
+</body>
+
+</html>
