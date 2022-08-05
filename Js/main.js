@@ -33,6 +33,7 @@ modeIcon.forEach(icon => {
         days.childNodes[1].innerText = `${fullDays[day]}`;
         mode.classList.toggle('move');
         addMode(input.value, icon);
+        ul.childNodes[0].childNodes[2].style.color = getComputedStyle(icon).backgroundColor;
         input.value = '';
     });
 });
@@ -88,8 +89,7 @@ function addMode(text, mode, isSave = true) {
                         </span>
                     </div>`;
     task.classList.add('flex1');
-    task.childNodes[2].style.color = getComputedStyle(mode).backgroundColor;
-    console.log(getComputedStyle(mode).backgroundColor);
+    //task.childNodes[2].style.color = getComputedStyle(mode).backgroundColor;
     ul.insertBefore(task, ul.childNodes[0]);
     if (isSave) saveTodo(text, mode);
 }
@@ -101,7 +101,7 @@ function saveTodo(text, model) {
         date: new Date().toUTCString(),
         text: text,
         color: getComputedStyle(model).backgroundColor,
-        icon: model.classList[0]
+        icon: model.outerHTML
     };
     todoList.push(todo);
     localStorage.todo = JSON.stringify(todoList);
